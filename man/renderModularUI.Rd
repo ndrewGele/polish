@@ -7,9 +7,9 @@
 renderModularUI(module.dir, module.file, numbered = FALSE, layout.fun, ...)
 }
 \arguments{
-\item{module.dir}{Path to the parent directory containing module directories}
+\item{module.dir}{Path to directory that contains modules (child directories)}
 
-\item{module.file}{Name of file within module directories containing UI code}
+\item{module.file}{Name of file found within module directories that contains UI code}
 
 \item{numbered}{If \code{TRUE}, directories will be ordered by numeric prefix (e.g., \verb{01_Index}, \verb{02_About})}
 

@@ -4,7 +4,7 @@
 #'
 #' @param module.dir Path to the parent directory containing module directories
 #' @param module.file Name of file within module directories containing server code
-#' @param environment `environment()` to be passed to `source()` (must provided when function is called)
+#' @param environment `environment()` to be passed to `source()` (must be provided when function is called)
 #'
 #' @export
 modularServer <- function(module.dir, module.file, environment) {

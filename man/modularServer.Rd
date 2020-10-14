@@ -11,7 +11,7 @@ modularServer(module.dir, module.file, environment)
 
 \item{module.file}{Name of file within module directories containing server code}
 
-\item{environment}{\code{environment()} to be passed to \code{source()} (must provided when function is called)}
+\item{environment}{\code{environment()} to be passed to \code{source()} (must be provided when function is called)}
 }
 \description{
 Loops through modules, loading server code into Shiny via \code{source()} if files exist.

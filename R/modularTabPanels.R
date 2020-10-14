@@ -7,6 +7,7 @@
 #' @param numbered If `TRUE`, directories will be ordered by numeric prefix (e.g., `01_Index`, `02_About`)
 #'
 #' @return A list of Shiny `tabPanel()` objects
+#'
 #' @export
 modularTabPanels <- function(module.dir, module.file, numbered = FALSE) {
 
