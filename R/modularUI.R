@@ -10,7 +10,7 @@
 #' @return A Shiny UI object
 #'
 #' @export
-renderModularUI <- function(module.dir, module.file, numbered = FALSE, layout.fun, ...) {
+modularUI <- function(module.dir, module.file, numbered = FALSE, layout.fun, ...) {
 
   res <- do.call(
     layout.fun,
