@@ -1,6 +1,7 @@
 # polish
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/polish)](https://cran.r-project.org/package=polish)
+[![Travis build status](https://travis-ci.com/ndrewGele/polish.svg?branch=master)](https://travis-ci.com/ndrewGele/polish)
 
 ## Overview
 
@@ -12,7 +13,7 @@ loading external files automatically, keeping your `app.R` file short and clean.
 
 ``` r
 # Until polish is submitted to CRAN and approved, you can install it via GitHub.
-devtools::install_github("ndrewGele/polish")
+devtools::install_github('ndrewGele/polish')
 ```
 
 ## Usage
