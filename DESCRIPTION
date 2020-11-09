@@ -4,7 +4,7 @@ Title: A Modular Framework for R Shiny Apps
 Version: 0.1.0
 Authors@R: person('Andrew', 'Gelé', email = 'andrew.gele@gmail.com',
                   role = c('aut', 'cre'))
-Description: Polish is a framework for Shiny Apps that facilitates modularity and collaboration.
+Description: A framework for Shiny Apps that facilitates modularity and collaboration.
 License: GPL-3 + file LICENSE
 URL: https://github.com/ndrewGele/polish
 Imports:
