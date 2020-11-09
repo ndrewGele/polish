@@ -16,3 +16,15 @@ modularServer(module.dir, module.file, environment)
 \description{
 Loops through modules, loading server code into Shiny via \code{source()} if files exist.
 }
+\examples{
+# Load server.R files into the server environment
+\dontrun{
+server <- function(input, output, session) {
+  modularServer(
+    module.dir = file.path('.', 'modules'),
+    module.file = 'server.R',
+    environment = environment()
+  )
+}
+}
+}

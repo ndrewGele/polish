@@ -19,3 +19,18 @@ A list of Shiny \code{tabPanel()} objects
 \description{
 Maps over modules, converting Shiny UI code into \code{tabPanel()} objects.
 }
+\details{
+This function can be used on its own if desired, but modularUI() can be used to pass the tabPanels to a UI function more succinctly.
+}
+\examples{
+# Create a list of tabPanels from ui.R files
+\dontrun{
+server <- function(input, output, session) {
+  tabPanels <- modularTabPanels(
+    module.dir = file.path('.', 'modules'),
+    module.file = 'ui.R',
+    numbered = TRUE
+  )
+}
+}
+}

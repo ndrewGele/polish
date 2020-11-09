@@ -10,6 +10,23 @@
 #' @return A Shiny UI object
 #'
 #' @export
+#' @examples
+#' # app.R
+#' # Create a UI object and render it
+#' \dontrun{
+#' server <- function(input, output, session) {
+#'   output$appUI <- renderUI({
+#'     modularUI(
+#'       module.dir = file.path('.', 'modules'),
+#'       module.file = 'ui.R',
+#'       layout.fun = navbarPage,
+#'       title = 'My Modular App'
+#'     )
+#'   })
+#' }
+#' ui <- uiOutput('appUI')
+#' shinyApp(ui, server)
+#' }
 modularUI <- function(module.dir, module.file, numbered = FALSE, layout.fun, ...) {
 
   res <- do.call(

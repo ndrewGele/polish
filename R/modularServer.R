@@ -7,6 +7,17 @@
 #' @param environment `environment()` to be passed to `source()` (must be provided when function is called)
 #'
 #' @export
+#' @examples
+#' # Load server.R files into the server environment
+#' \dontrun{
+#' server <- function(input, output, session) {
+#'   modularServer(
+#'     module.dir = file.path('.', 'modules'),
+#'     module.file = 'server.R',
+#'     environment = environment()
+#'   )
+#' }
+#' }
 modularServer <- function(module.dir, module.file, environment) {
 
   # list.dirs() returns parent directory, so filter it out

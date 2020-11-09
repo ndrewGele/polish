@@ -24,3 +24,21 @@ A Shiny UI object
 Compiles all Module UI files into the desired \code{layout.fun} using \code{do.call()}, keeping your \code{app.R} file tidy.
 This can be run within \code{ui.R}, \code{shinyUI()}, or \code{renderUI()}, just like any other Shiny UI element.
 }
+\examples{
+# app.R
+# Create a UI object and render it
+\dontrun{
+server <- function(input, output, session) {
+  output$appUI <- renderUI({
+    modularUI(
+      module.dir = file.path('.', 'modules'),
+      module.file = 'ui.R',
+      layout.fun = navbarPage,
+      title = 'My Modular App'
+    )
+  })
+}
+ui <- uiOutput('appUI')
+shinyApp(ui, server)
+}
+}

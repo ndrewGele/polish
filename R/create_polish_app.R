@@ -1,4 +1,4 @@
-#' Automatically create a Polish App
+#' Create a ready-to-use Polish App skeleton
 #'
 #' Creates needed files and directories so that you can quickly begin development of your Shiny App.
 #'
@@ -7,6 +7,15 @@
 #' @param helpful.comments If `TRUE`, comments will be included to help the user learn how Polish Apps work
 #'
 #' @export
+#' @examples
+#' # Create a new polish app skeleton with example modules and helpful comments in the app.R file.
+#' \dontrun{
+#' polish::create_polish_app(
+#'   app.dirname = file.path('.', 'my_new_shiny_app'),
+#'   example.modules = TRUE,
+#'   helpful.comments = TRUE
+#' )
+#' }
 create_polish_app <- function(app.dirname, example.modules = FALSE, helpful.comments = FALSE) {
 
   dir <- system.file("boilerplate", package = "polish", mustWork = TRUE)
