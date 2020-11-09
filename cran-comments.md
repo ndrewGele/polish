@@ -1,3 +1,6 @@
+## Resubmission
+Removed LICENSE file reference from DESCRIPTION per feedback. Thank you for the help!
+
 ## Test environments
 * local: Windows 64-bit, R 4.0.3
 * win-builder: R Under development (unstable) (2020-11-01 r79391)
