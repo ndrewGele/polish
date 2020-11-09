@@ -23,9 +23,7 @@ directory that gets created. For first-time users, The Helpful Comments can help
 polish `app.R` is organized, and the Example Modules can serve as a blueprint for your own modules.
 
 ``` r
-library(polish)
-
-create_polish_app(
+polish::create_polish_app(
   app.dirname = '/path/to/my_new_shiny_app', 
   example.modules = TRUE,
   helpful.comments = TRUE
