@@ -1,7 +1,7 @@
 # polish
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/polish)](https://cran.r-project.org/package=polish)
-[![Travis build status](https://travis-ci.com/ndrewGele/polish.svg?branch=master)](https://travis-ci.com/ndrewGele/polish)
+
 
 ## Overview
 
