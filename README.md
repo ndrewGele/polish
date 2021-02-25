@@ -1,4 +1,4 @@
-# polish
+# polish <img src='man/figures/logo.png' align="right" height="139" />
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/polish)](https://cran.r-project.org/package=polish)
 
